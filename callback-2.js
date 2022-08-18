@@ -20,7 +20,10 @@ function newArray(arr, callbacko) {
     return arr1;
 }
 let arr = [5, 6, 7, 4, 5, 6, 7, 1, 2];
-console.log(newArray(arr, (y) => y + 1)); //incrémente l'élément du tableau par 1.
-console.log(newArray(arr, (y) => y * 2)); //double chaque élément du tableau.
-console.log(newArray(arr, (y) => y * y)); //équerre chaque élément du tableau.
+console.log(newArray(arr, (y) => y + 1)); //incrémente tous les éléments du tableau par 1 et, 
+// retourne un nouveau tableau [6, 7, 8, 5, 6, 7, 8, 2, 3]
+console.log(newArray(arr, (y) => y * 2)); //double chaque élément du tableau et retourne 
+// [10, 12, 14, 8, 10, 12, 14,  2, 4]
+console.log(newArray(arr, (y) => y * y)); //équerre chaque élément du tableau et retourne
+// [25, 36, 49, 16, 25, 36, 49,  1,  4]
 // Fonction d'ordre supérieur en JavaScript
